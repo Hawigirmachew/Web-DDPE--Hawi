@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keyword" content="register page" >
+<link rel="script" href="script.js">
+<title>Register</title>
+</head>
+<body>
+<table width="100%">
+<tr>
+<td width="10%"></td>
+<td><svg width="150" height="160">
+   <rect x="20" y="45" rx="20" ry="20" width="110" height="110" style="fill:black;
+   stroke:rgba(123, 167, 23, 0.5); stroke-width:6" />
+   <text fill="white" font-size="25" font-family="Verdana" x="40" y="86" >
+       ንቃት
+     </text>
+     <defs><linearGradient x1="0%" y1="0%" x2="100%" y2="0%">
+         <stop offset="0%" style="stop-color:brown; stop-opacity:2;" />
+         <stop offset="100%" style="stop-color:chocolate; stop-opacity: 2;"/>
+     </linearGradient></defs>
+
+</svg>  </td>
+<td align="right"><span>
+<a href="podcast.html">Podcast</a>|
+<a href ="articles.html">Articles</a>|
+<a href ="ideas.html">Ideas</a>|
+<a href ="signin.html">signin</a>|
+<a href ="register.html">register</a></span>
+</td>
+<td width="10%"></td>
+</tr>
+
+</table>
+<hr>
+
+<table width="100%">
+<tr>
+<td width="10%"></td>
+<td width="55%"></td>
+<td width="25%" align="right"><a href ="gotobottom.html">Go TO bottom</a></td>
+<td width="10%"></td>
+<tr>
+
+<tr>
+<td width="10%"></td>
+<td width="55%">
+<h1>Register</h1>
+<form>
+    <label for ="name">Full Name</label><br>
+    <input type ="text" name ="name" size="50%" onfocus="highlightElement(this)"><br>
+    <label for ="number">Phone</label><br>
+    <input type ="TELE" name ="number" size="50%" onfocus="highlightElement(this)" onblur="handelOnblurFuction(this)"><br>
+    <label for ="num">Age</label><br>
+    <input type ="number" name ="num" min="18" max="20"><br>
+    <label for ="fav">Your Favorite Color</label><br>
+   <input type ="color" name ="fav" ><br>
+    <label for ="bd">Birthdate</label><br>
+   <input type ="date" name ="bd"><br>
+   <label for="gender">Gender</label><br>
+   <label for="one">Female</label>
+   <input type ="radio" id="one" name ="sex" value="one">
+   <label for="two">Male</label>
+   <input type ="radio" id="two" name ="sex" value="two"><br>
+   <label for ="password">Password</label><br>
+   <input type ="text" name ="password" size="50%"  min="6" max="32"><br>
+   <label for ="confirm">Confirm Password</label><br>
+   <input type ="text" name ="confirm" size="50%" min="6" max="32"><br><br>
+   <details>
+      <summary>Skills</summary>
+      <input type="checkbox">HTML<br> 
+      <input type="checkbox">CSS<br> 
+      <input type="checkbox">Javascript<br> 
+   </details>
+ <label for="country">Country</label><br>
+ <select id ="country" name="country">
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Sudan">Sudan</option>
+    <option value="Tanzania">Tanzania</option>
+    <option value="Somalia">Somalia</option>
+ </select><br>
+ <label for="photo">Photo</label><br>
+ <input type ="file"  name ="photo"><br>
+ <label for="describe">Describe Yourself</label><br>
+ <textarea name="describe"  rows="10" cols="50" onfocus="highlightElement(this)" onblur="handelOnblurFuction(this)"></textarea><br>
+
+ <input type="submit" value="submit">
+<input type="submit" value="Reset">
+
+
+</form>
+<script src="script.js"></script>
+   
+
+   
+
+
+</td>
+
+<td width="25%" valign="top">
+<h3>Recent Posts</h3>
+<ul>
+<li>Articles</li>
+<ul>
+<li>The Importance of Goals, Especially During Difficult Times </li>
+<li>5 Steps to Discovering Your Life Purpose In 2022! </li>
+</ul>
+<li>Ideas</li>
+<ul>
+<li>10 Books to Read in The Fall</li>
+<li>Top Web Development Projects Ideas </li>
+</ul>
+</ul>
+
+<h2>Most Viewed Articls</h2>
+<ol type="I">
+<li>Instant Gratification Is Stopping You From Reaching Your Goals!</li>
+<li>Stop Juggling Between Work And Life </li>
+</ol>
+
+<h2>IP Project Winners</h2>
+<pre>
+---------------------------------
+Rank    Award
+---------------------------------
+First   Free hosting and support
+Second  5GB Mobile Data
+Third   1GB Mobile Data 
+---------------------------------- 
+</pre>
+</td>
+<td width="10%"></td>
+<tr>
+
+<tr>
+<td width="10%"></td>
+<td width="55%" colspan="2"><hr></td>
+<td width="25%"></td>
+<td width="10%"></td>
+<tr>
+
+<tr>
+<td width="10%"></td>
+<td width="55%">
+Follow Us On:
+<a href ="facebook.com">Facebook</a>|
+<a href ="twitter.com">Twitter</a>
+</td>
+<td width="25%" align="right">
+<a href ="privacy.html">Privacy</a>|
+<a href ="terms.html">Terms of Use</a>
+</td>
+<td width="10%"></td>
+<tr>
+
+<tr>
+<td width="10%"></td>
+<td width="55%" colspan="2" align="center">Copyright &#copy AASTU SEng 2021, All Rights Reserved</td>
+<td width="25%"></td>
+<td width="10%"></td>
+<tr>
+</table>
+
+</body>
+</html>

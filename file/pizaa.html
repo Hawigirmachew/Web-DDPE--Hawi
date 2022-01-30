@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+<meta name=" description" content="About reservation ">
+<meta name=" key words" content="Reservation and pizza delivery">
+<meta name=" author" content="Hawi Girmachew">
+        <title>
+            Reservation and  Pizza delivery
+        </title>
+    </head>
+    <body bgcolor="faebd7">
+        <table width="100%" bgcolor="d2b480" >
+            <th ><td width="10%" height="50px" valign ="top"> 
+                <svg width="180" height="110">
+                    <ellipse cx="95" cy="65" rx="55" ry="25" 
+                    fill="rgba(118, 85, 122, 0.582)"/>
+                    <text  x="60" y="70" fill="rgba(22, 22, 2, 0.664)" font-size="12" font-family="cursive">
+                          Miliki Agent
+                    
+                    </text>
+                    <defs><linearGradient x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgba(118, 85, 122, 0.582); stop-opacity:2;" />
+                        <stop offset="100%" style="stop-color:rgba(22, 22, 2, 0.664); stop-opacity: 2;"/>
+                    </linearGradient></defs>
+                </svg> 
+            </td></th>
+                
+               <th> <td width="80%" align="center"  height="50px"><a href="webhome.html">Home</a>&emsp;&emsp;&emsp;<a href="jop application.html">JOP application</a>&emsp;&emsp;&emsp;
+                    <a href="feedback.html">Feedback</a>&emsp;&emsp;&emsp;<a href="pizaa.html#pizza">Pizza Delivery</a>&emsp;&emsp;&emsp;
+                </td></th>
+                <th><td width="10%"></td></th>
+            
+        </table>
+        
+        <a href="#pizza">Pizza delivery</a>
+        <h2> &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;Reservation Request</h2>
+        <table >
+            <th>
+ 
+                <td width="5%"></td>
+              </th>
+            <th>
+                <td width="60%" align="left">
+                    <form action="#">
+                        <fieldset>
+                            <legend>General information</legend>
+                            <lable for="arrival date">Arrival Date:&emsp;:&emsp;</lable>
+                            <input type="date" id="arrival date" min="1/12/2016" max="31/12/2016"><br><br>
+                            <lable for="nights">Nights:&emsp;:&emsp;</lable>
+                            <input id="nighths" type="number"><br><br>
+                            <lable for="adults">Adults:&emsp;:&emsp;</lable>
+                            <select id="adults">
+                                
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select><br><br>
+                            <lable for="childern">Childern:&emsp;:&emsp;</lable>
+                            <select id="children">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select><br><br>
+                            
+                        </fieldset><br><br>
+                        <fieldset>
+                            <legend>Prefernces</legend>
+                            <p>Room type:&emsp; <input id="standard" type="radio"><lable for="standard">Standard</lable>
+                                <input id="bussiness" type="radio"><lable for="bussiness">Business</lable>
+                                <input id="suite" type="radio"><lable for="suite">Suite</lable><br>
+                                Bed type:&emsp; <input id="king" type="radio"><lable for="king">King</lable>
+                                <input id="double" type="radio"><lable for="double">Double double</lable><br>
+                                <input id="smoking" type="checkbox"><lable for="smoking">Smoking</lable><br>
+            
+                            
+                            </p>
+                        </fieldset><br><br>
+                        <fieldset>
+                            <legend>Contact information</legend>
+                            <lable for="name">Name:&emsp;:&emsp;</lable>
+                            <input type="text" id="name" required><br><br>
+                            <lable for="uemail">Emial:&emsp;:&emsp;</lable>
+                            <input id="uemial" type="email"><br><br>
+                            <lable for="telnumber">Phone&emsp;:&emsp;</lable>
+                            <input id="telnumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-234-4567"><br><br>
+                        </fieldset>
+                        <input type="submit" value=" &emsp;&emsp;Submit Reservation &emsp;&emsp; &emsp;&emsp;">
+                        <input type="reset"  value=" &emsp;&emsp; &emsp;&emsp;Clear &emsp;&emsp; &emsp;&emsp;">
+                </td>
+            </th>
+            <th>
+ 
+                <td width="5%"></td>
+              </th>
+        </table>  
+        </form>
+        <h2 id="pizza"> &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;
+            &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;   &emsp;&emsp; Pizza delivery</h2>
+        <h3> &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  
+            &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  Online order Form</h3>
+        <form>
+            <table >
+                <tr>
+                    <td>
+                        &emsp;&emsp;  <label for="name">&emsp;*Name:&emsp;</label>
+                       <input type="text" size="20 " id="name" name="username"><br><br>
+                       &emsp;&emsp;  <label for="Address">*Address:&emsp;</label>
+                       <input type="text" size="20 " id="Address" name="useraddress"><br><br>
+                       &emsp;  <label for="town">*Town/City:&emsp;</label>
+                       <input type="text" size="20 " id="town" name="usernametown"> <br><br>
+                    </td>
+                    <td>
+                        &emsp;&emsp;   <label for="postcode" maxlength="8">*Postcode:&emsp;</label>
+                       <input type="text" size="20 " id="postcode" name="user postcode"><br><br>
+                       &emsp;&ensp;  <label for="telephone">*Telephone:&emsp;</label>
+                       <input type="tel" size="20 " id="telephone" name="user telephone"><br><br>
+                       &emsp;&emsp;&ensp;&ensp;&ensp;  <label for="emil">*Email:&emsp;</label>
+                       <input type="email" size="20 " id="email" name="user email"><br><br>
+                       
+                    </td>
+                </tr>
+            </table>
+        </form>
+            <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*Required fields</h3>
+            <form>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Topping</legend>
+                                <ul type="none">
+                                    <li><input type="radio" id="name" name="food" ><lable for="name">Margherita:</lable></li>
+                                    <li><input type="radio" id="name" name="food" ><lable for="fourseason">Four season</lable></li>
+                                    <li><input type="radio" id="meat" name="food" ><lable for="meat">Meat feast:</lable></li>
+
+                                </ul>
+                            </fieldset>
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend>Size</legend>
+                                <ul type="none">
+                                    <li><input type="radio" id="small" ><lable for="small" >Small</lable></li>
+                                    <li><input type="radio" id="medium" ><lable for="medium">Medium</lable></li>
+                                    <li><input type="radio" id="large" ><lable for="large">Large</lable></li>
+
+                                </ul>
+                            </fieldset>
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend>Extras</legend>
+                                <ul type="none">
+                                    <li><input type="checkbox" id="mushroom" ><lable for="name">Mushrooms</lable></li>
+                                    <li><input type="checkbox" id="green papers" ><lable for="green papers">Green Papers</lable></li>
+                                    <li><input type="checkbox" id="anchovies" ><lable for="anchovies">Anchovies</lable></li>
+                                    <li><input type="checkbox" id="extra" ><lable for="extra">Extra Cheese</lable></li>
+                                </ul>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    
+                </table>
+            &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  
+            <lable for="delivery time">Preffered delivery time:</lable>
+                <input id="delivery time" type="time" name="time" required><br>
+               
+                <table>
+                    <th><td align="center">
+                        &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;
+                    <lable>Delivery instructions:<br>&emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  &emsp;&emsp; or address</label> <br></td></th>
+                      <th><td>
+                      <textarea rows = "4" cols = "50" name = "description" required maxlength="4"></textarea></td></th>
+                      <br>
+                    </table>
+                &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;
+                &emsp; &emsp; &emsp; &emsp;<input type="submit" value="Submit Code">
+            </form>
+            <footer>
+                <table height="90px"width="100%"  bgcolor="#BC9988">
+                    <th>
+                        <td width="10%"></td></th>
+                        <th> 
+                            <td width="80%">Content
+                                <ul type="none">
+                                    <li><a href="jop application.html">Jop application</a></li>
+                                    <li><a href="pizaa.html">Reservation and delivery</a></li>
+                                    <li><a href="feedback.html">Feedback</a></li>
+                                </ul>
+                            </td>
+                        </th>
+                       
+                    <th><td width="10%"></td></th>
+                </table>
+            </footer>
+           
+        
+       
+    </body>
+</html>
