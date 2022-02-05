@@ -48,49 +48,53 @@
 <td width="55%">
 <h1>Register</h1>
 <form>
-    <label for ="name">Full Name</label><br>
-    <input type ="text" name ="name" size="50%" onfocus="highlightElement(this)"><br>
-    <label for ="number">Phone</label><br>
-    <input type ="TELE" name ="number" size="50%" onfocus="highlightElement(this)" onblur="handelOnblurFuction(this)"><br>
-    <label for ="num">Age</label><br>
-    <input type ="number" name ="num" min="18" max="20"><br>
-    <label for ="fav">Your Favorite Color</label><br>
-   <input type ="color" name ="fav" ><br>
-    <label for ="bd">Birthdate</label><br>
-   <input type ="date" name ="bd"><br>
+   <label for="first name">First Name</label><br>
+   <input type="text" name="first name" size="50%" maxlength="50"  required onclick="highlightElement(this)" id="fname"><br>
+   <label for="phone">Phone</label><br>
+   <input type="tel" name="phone" size="50%" required onblur="handelOnblurFuction(this)" id="phone"><br>
+   <label for="age">Age</label><br>
+   <input type="number" name="age" min="18" max="30" required id="age"><br>
+   <label for="color">Your Favorite color</label><br>
+   <input type="color" name="color" id="color"><br>
+   <button id="bt1">Display</button>
+   <div class="output">
+   </div>
+   <label for="birthday">Birthday</label><br>
+   <input type="date" name="birthday"><br>
    <label for="gender">Gender</label><br>
    <label for="one">Female</label>
-   <input type ="radio" id="one" name ="sex" value="one">
+   <input type="radio" id="one" name="gender" value="Female">
    <label for="two">Male</label>
-   <input type ="radio" id="two" name ="sex" value="two"><br>
-   <label for ="password">Password</label><br>
-   <input type ="text" name ="password" size="50%"  min="6" max="32"><br>
-   <label for ="confirm">Confirm Password</label><br>
-   <input type ="text" name ="confirm" size="50%" min="6" max="32"><br><br>
-   <details>
-      <summary>Skills</summary>
-      <input type="checkbox">HTML<br> 
-      <input type="checkbox">CSS<br> 
-      <input type="checkbox">Javascript<br> 
-   </details>
- <label for="country">Country</label><br>
- <select id ="country" name="country">
-    <option value="Ethiopia">Ethiopia</option>
-    <option value="Kenya">Kenya</option>
-    <option value="Sudan">Sudan</option>
-    <option value="Tanzania">Tanzania</option>
-    <option value="Somalia">Somalia</option>
- </select><br>
- <label for="photo">Photo</label><br>
- <input type ="file"  name ="photo"><br>
- <label for="describe">Describe Yourself</label><br>
- <textarea name="describe"  rows="10" cols="50" onfocus="highlightElement(this)" onblur="handelOnblurFuction(this)"></textarea><br>
-
- <input type="submit" value="submit">
-<input type="submit" value="Reset">
-
+   <input type="radio" id="two" name="gender" value="Male"><br>
+   <br>
+   <label for="password">Password</label><br>
+   <input type="password" name="password" minlength="6" maxlength="32" required><br>
+   <label for="cpassword">Confirm Password</label><br>
+   <input type="password" name="cpassword" minlength="6" maxlength="32" required><br>
+   <br>
+   <label for="three">Skills</label><br>
+   <ul id="three">
+      <li><input type="checkbox">HTML</li>
+      <li><input type="checkbox">CSS</li>
+      <li><input type="checkbox">JavaScript</li>
+      <li><input type="checkbox">PHP</li>
+   </ul>
+   <label for="country">Country</label><br>
+   <select name="country">
+      <option value="Ethiopia">Ethiopia</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Eritrea">Eritrea</option>
+      <option value="Sudan">Sudan</option>
+   </select><br>
+   <label for="photo">Photo</label><br>
+   <input type="file" name="photo"><br>
+   <label for="describe">Describe Yourself</label><br>
+   <textarea name="describe" rows="7" cols="9" onfocus="rows='20'"></textarea><br>
+   <input type="submit" value="submit" onfocus="style.background='red'" onfocusout="style.background='yellow'">
+   <input type="reset" value="reset">
 
 </form>
+
 <script src="script.js"></script>
    
 
@@ -162,6 +166,64 @@ Follow Us On:
 <td width="10%"></td>
 <tr>
 </table>
+<script>
+function set(v)
+	{
+		this.value = v
+	}
 
+	const all = {}
+	const fname = document.getElementById('fname')
+	const age = document.getElementById('age')
+	const phone = document.getElementById('phone')
+	const color = document.getElementById('color')
+
+	fname.addEventListener('input',()=>{
+		const obj1 = new set(fname.value);
+		all.FirstName = obj1.value
+	})
+
+
+	age.addEventListener('input',()=>{
+		const obj2= new set(age.value);
+		all.Age = obj2.value
+	})
+
+	phone.addEventListener('input',()=>{
+		const obj3 = new set(phone.value);
+		all.Phone = obj3.value
+	})
+
+	color.addEventListener('click',()=>{
+		const obj4 = new set(color.value);
+		all.Color = obj4.value
+	})
+
+document.getElementById('bt1').addEventListener('click',(e)=>{
+	e.preventDefault()
+	const parent = document.querySelector('.output')
+
+	const f=document.createElement('h4')
+	f.innerHTML = "First Name: " + all.FirstName
+
+	const a = document.createElement('h4')
+	a.innerHTML = "Age: " + all.Age
+
+	const p = document.createElement('h4')
+	p.innerHTML = "Phone: " +  all.Phone
+
+	const c= document.createElement('h4')
+	c.innerHTML = "Color: " + all.Color + " Airplane"
+	
+	parent.appendChild(f)
+	parent.appendChild(a)
+	parent.appendChild(p)
+	parent.appendChild(c)
+
+
+})
+	</script>
+
+</script>
 </body>
 </html>
